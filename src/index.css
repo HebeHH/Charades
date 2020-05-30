@@ -1,13 +1,60 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+    font: 14px "Century Gothic", Futura, sans-serif;
+    margin: 0px;
+  }
+  
+  
+  .board-row:after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+  
+  .square:focus {
+    outline: none;
+  }
+  
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+  .styleroot {
+      all: inherit;
+      width: 100%
+  }
+
+  body > #root > div {
+    height: 100vh;
+  }
+  
+  .game {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    background-color: cornflowerblue;
+    /* flex-direction: row; */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .tmp {
+      width: 400px;
+      height: 40px;
+      background-color: lawngreen;
+  }
+
+  .wordcard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 60vh;
+    margin: 10% auto 30% auto;
+    background-color: cornsilk;
+    text-align: center;
+    font: 30px "Century Gothic", Futura, sans-serif;
+  }
+  
+  .game-info {
+    margin-left: 20px;
+  }
+  
